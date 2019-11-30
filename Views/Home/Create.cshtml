@@ -1,0 +1,17 @@
+@model Movie
+
+<form asp-controller="Home" asp-action="CreatePost"  method=post>
+    <label asp-for="@Model.Id">ID</label>
+    <input asp-for="@Model.Id">
+
+    <label asp-for="@Model.Name">Name</label>
+    <input asp-for="@Model.Name"> 
+
+    <label asp-for="@Model.Genre">Genre</label>
+    <input asp-for="@Model.Genre">
+
+    <label asp-for="@Model.Director">Director</label>
+    <input asp-for="@Model.Director">
+
+    <button type="submit">Create</button>
+</form>
